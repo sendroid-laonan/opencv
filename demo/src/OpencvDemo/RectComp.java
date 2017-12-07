@@ -1,4 +1,4 @@
-package com.sendroids.opencv;
+package OpencvDemo;
 
 import org.opencv.core.Rect;
 

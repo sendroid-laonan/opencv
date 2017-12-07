@@ -9,7 +9,7 @@ import java.util.*;
 import static org.opencv.core.CvType.CV_8U;
 import static org.opencv.imgproc.Imgproc.MORPH_RECT;
 
-public class OpenCV {
+public class openCV {
     static {
         //OpenCV -ver 3.30
         System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
@@ -41,7 +41,7 @@ public class OpenCV {
         Imgproc.erode(srcImage3, srcImage4, element);
         //膨胀操作
         Imgproc.dilate(srcImage4, srcImage5, element);
-        //输出第一次操作后的效果图 实际开发请省略掉
+        //输出第一批操作后的效果图 实际开发请省略掉
         Imgcodecs.imwrite("E:/picpool/card/enresults.jpg", srcImage4);
 
         //确定每张答题卡的ROI区域
